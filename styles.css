@@ -1,0 +1,230 @@
+/* ===============================
+   GLOBAL THEME
+================================ */
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #e8ecf7 0%, transparent 60%),
+    radial-gradient(1000px 500px at 90% 10%, #f3e8ff 0%, transparent 55%),
+    #f5f6fa;
+  color: #1e293b;
+  line-height: 1.65;
+}
+
+/* ===============================
+   PAGE SYSTEM
+================================ */
+.page {
+  display: none;
+  min-height: 100vh;
+  animation: fadeIn 0.35s ease;
+}
+
+.page.active {
+  display: block;
+}
+
+/* ===============================
+   LAYOUT
+================================ */
+.page-container {
+  max-width: 920px;
+}
+
+/* Home centering */
+.center-card {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===============================
+   CARDS
+================================ */
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow:
+    0 10px 30px rgba(15, 23, 42, 0.08),
+    0 2px 6px rgba(15, 23, 42, 0.05);
+}
+
+/* Home card special feel */
+.center-card .card {
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+}
+
+/* ===============================
+   TYPOGRAPHY
+================================ */
+h1 {
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h5 {
+  font-weight: 600;
+}
+
+.section-title {
+  margin-bottom: 6px;
+}
+
+.section-subtitle {
+  font-size: 0.95rem;
+  color: #64748b;
+  max-width: 600px;
+}
+
+.section-divider {
+  margin: 18px 0 26px;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+.btn {
+  border-radius: 12px;
+  font-weight: 500;
+  padding: 10px 16px;
+}
+
+.btn-lg {
+  padding: 14px 18px;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  border: none;
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #475569, #334155);
+  border: none;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  border: none;
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+  border: none;
+}
+
+.btn-outline-secondary {
+  border-radius: 10px;
+  border-color: #cbd5f5;
+  color: #475569;
+}
+
+.btn-outline-secondary:hover {
+  background: #eef2ff;
+  color: #3730a3;
+}
+
+/* ===============================
+   FORMS
+================================ */
+label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #475569;
+  letter-spacing: 0.02em;
+}
+
+.form-control,
+.form-select {
+  border-radius: 12px;
+  border: 1px solid #c7d2fe;
+  padding: 10px 12px;
+  background: #ffffff;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
+}
+
+/* ===============================
+   SKILL PANEL
+================================ */
+.skill-panel {
+  background:
+    linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 22px;
+}
+
+.panel-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #3730a3;
+  letter-spacing: 0.02em;
+}
+
+/* ===============================
+   RESULT CARD
+================================ */
+#result .card {
+  background:
+    linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  border-left: 5px solid #6366f1;
+}
+
+/* ===============================
+   ASCII GRAPH (TEMP)
+================================ */
+pre {
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 18px;
+  border-radius: 14px;
+  font-size: 0.85rem;
+}
+
+/* ===============================
+   TABLE
+================================ */
+.table {
+  margin-top: 10px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table th {
+  background: #eef2ff;
+  color: #3730a3;
+  font-weight: 600;
+}
+
+.table td {
+  background: #ffffff;
+}
+
+/* ===============================
+   ANIMATION
+================================ */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
